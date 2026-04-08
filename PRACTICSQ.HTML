@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physiotherapy Treatments</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    .desc {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.4s ease;
+    }
+
+    .card:hover .desc {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .card:hover img {
+      transform: scale(1.1);
+    }
+
+    .card img {
+      transition: transform 0.4s ease;
+    }
+
+    .treatment-grid.collapsed .card:nth-child(n+6) {
+      display: none;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100">
+
+<div class="max-w-7xl mx-auto px-4 py-10">
+
+  <h1 class="text-2xl md:text-3xl font-bold text-center mb-10">
+    Physiotherapy Treatments
+  </h1>
+
+  <!-- GRID -->
+  <div id="treatmentGrid" class="treatment-grid collapsed grid grid-cols-2 lg:grid-cols-5 gap-8">
+
+    <!-- CARD -->
+    <div class="card bg-white rounded-2xl shadow-lg overflow-hidden h-[320px]">
+      <div class="relative h-2/3 overflow-hidden">
+        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Physical%20Rehabilitation.png?width=900" alt="Exercise therapy session" class="w-full h-full object-cover" loading="lazy" referrerpolicy="no-referrer">
+      </div>
+      <div class="p-4 text-center">
+        <h2 class="font-bold text-lg">Exercise Therapy</h2>
+        <p class="desc text-sm text-gray-600 mt-2">
+          Improves strength, flexibility and helps in faster recovery.
+        </p>
+      </div>
+    </div>
+
+    <div class="card bg-white rounded-2xl shadow-lg overflow-hidden h-[320px]">
+      <div class="relative h-2/3 overflow-hidden">
+        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Rural%20Physiotherapy.jpg?width=900" alt="Manual therapy treatment" class="w-full h-full object-cover" loading="lazy" referrerpolicy="no-referrer">
+      </div>
+      <div class="p-4 text-center">
+        <h2 class="font-bold text-lg">Manual Therapy</h2>
+        <p class="desc text-sm text-gray-600 mt-2">
+          Hands-on techniques to improve joint mobility and reduce pain.
+        </p>
+      </div>
+    </div>
+
+    <div class="card bg-white rounded-2xl shadow-lg overflow-hidden h-[320px]">
+      <div class="relative h-2/3 overflow-hidden">
+        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Physiotherapy%20therapy%20and%20occupational%20therapy.jpg?width=900" alt="Electrotherapy treatment support" class="w-full h-full object-cover" loading="lazy" referrerpolicy="no-referrer">
+      </div>
+      <div class="p-4 text-center">
+        <h2 class="font-bold text-lg">Electrotherapy</h2>
+        <p class="desc text-sm text-gray-600 mt-2">
+          Uses electrical stimulation for pain relief and muscle recovery.
+        </p>
+      </div>
+    </div>
+
+    <div class="card bg-white rounded-2xl shadow-lg overflow-hidden h-[320px]">
+      <div class="relative h-2/3 overflow-hidden">
+        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Doctor_examines_patient.jpg?width=900" alt="Heat therapy treatment consultation" class="w-full h-full object-cover" loading="lazy" referrerpolicy="no-referrer">
+      </div>
+      <div class="p-4 text-center">
+        <h2 class="font-bold text-lg">Heat Therapy</h2>
+        <p class="desc text-sm text-gray-600 mt-2">
+          Relaxes muscles and increases blood circulation.
+        </p>
+      </div>
+    </div>
+
+    <div class="card bg-white rounded-2xl shadow-lg overflow-hidden h-[320px]">
+      <div class="relative h-2/3 overflow-hidden">
+        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Home_Rehabilitation.jpg?width=900" alt="Cold therapy recovery support" class="w-full h-full object-cover" loading="lazy" referrerpolicy="no-referrer">
+      </div>
+      <div class="p-4 text-center">
+        <h2 class="font-bold text-lg">Cold Therapy</h2>
+        <p class="desc text-sm text-gray-600 mt-2">
+          Reduces swelling and controls inflammation and pain.
+        </p>
+      </div>
+    </div>
+
+    <div class="card bg-white rounded-2xl shadow-lg overflow-hidden h-[320px]">
+      <div class="relative h-2/3 overflow-hidden">
+        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Physiotherapy_Centre.jpg?width=900" alt="Hydrotherapy consultation" class="w-full h-full object-cover" loading="lazy" referrerpolicy="no-referrer">
+      </div>
+      <div class="p-4 text-center">
+        <h2 class="font-bold text-lg">Hydrotherapy</h2>
+        <p class="desc text-sm text-gray-600 mt-2">
+          Water-based therapy that improves movement and reduces pain.
+        </p>
+      </div>
+    </div>
+
+    <div class="card bg-white rounded-2xl shadow-lg overflow-hidden h-[320px]">
+      <div class="relative h-2/3 overflow-hidden">
+        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Physiotherapie.jpg?width=900" alt="Traction therapy support" class="w-full h-full object-cover" loading="lazy" referrerpolicy="no-referrer">
+      </div>
+      <div class="p-4 text-center">
+        <h2 class="font-bold text-lg">Traction Therapy</h2>
+        <p class="desc text-sm text-gray-600 mt-2">
+          Helps relieve pressure on spine and reduces back pain.
+        </p>
+      </div>
+    </div>
+
+    <div class="card bg-white rounded-2xl shadow-lg overflow-hidden h-[320px]">
+      <div class="relative h-2/3 overflow-hidden">
+        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Rural%20Physiotherapy.jpg?width=900" alt="Dry needling therapy support" class="w-full h-full object-cover" loading="lazy" referrerpolicy="no-referrer">
+      </div>
+      <div class="p-4 text-center">
+        <h2 class="font-bold text-lg">Dry Needling</h2>
+        <p class="desc text-sm text-gray-600 mt-2">
+          Targets trigger points to relieve muscle pain and tightness.
+        </p>
+      </div>
+    </div>
+
+    <div class="card bg-white rounded-2xl shadow-lg overflow-hidden h-[320px]">
+      <div class="relative h-2/3 overflow-hidden">
+        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Doctor%20Patient%20%28NIH_BioArt_130%29.png?width=900" alt="Kinesio taping therapy support" class="w-full h-full object-cover" loading="lazy" referrerpolicy="no-referrer">
+      </div>
+      <div class="p-4 text-center">
+        <h2 class="font-bold text-lg">Kinesio Taping</h2>
+        <p class="desc text-sm text-gray-600 mt-2">
+          Supports muscles and improves movement while reducing swelling.
+        </p>
+      </div>
+    </div>
+
+    <div class="card bg-white rounded-2xl shadow-lg overflow-hidden h-[320px]">
+      <div class="relative h-2/3 overflow-hidden">
+        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Physical%20Rehabilitation.png?width=900" alt="Balance training therapy" class="w-full h-full object-cover" loading="lazy" referrerpolicy="no-referrer">
+      </div>
+      <div class="p-4 text-center">
+        <h2 class="font-bold text-lg">Balance Training</h2>
+        <p class="desc text-sm text-gray-600 mt-2">
+          Improves stability, coordination and reduces fall risk.
+        </p>
+      </div>
+    </div>
+
+    <div class="card bg-white rounded-2xl shadow-lg overflow-hidden h-[320px]">
+      <div class="relative h-2/3 overflow-hidden">
+        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Physiotherapy_Centre.jpg?width=900" alt="Cardio therapy session" class="w-full h-full object-cover" loading="lazy" referrerpolicy="no-referrer">
+      </div>
+      <div class="p-4 text-center">
+        <h2 class="font-bold text-lg">Cardio Therapy</h2>
+        <p class="desc text-sm text-gray-600 mt-2">
+          Enhances heart health, endurance and respiratory function.
+        </p>
+      </div>
+    </div>
+
+    <div class="card bg-white rounded-2xl shadow-lg overflow-hidden h-[320px]">
+      <div class="relative h-2/3 overflow-hidden">
+        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Home_Rehabilitation.jpg?width=900" alt="Neurological physiotherapy support" class="w-full h-full object-cover" loading="lazy" referrerpolicy="no-referrer">
+      </div>
+      <div class="p-4 text-center">
+        <h2 class="font-bold text-lg">Neurological Physio</h2>
+        <p class="desc text-sm text-gray-600 mt-2">
+          Helps recovery after stroke and improves nerve function.
+        </p>
+      </div>
+    </div>
+
+    <div class="card bg-white rounded-2xl shadow-lg overflow-hidden h-[320px]">
+      <div class="relative h-2/3 overflow-hidden">
+        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Physiotherapy%20%28Reeve_091407%29%2C%20National%20Museum%20of%20Health%20and%20Medicine%20%283299244871%29.jpg?width=900" alt="Orthopedic physiotherapy session" class="w-full h-full object-cover" loading="lazy" referrerpolicy="no-referrer">
+      </div>
+      <div class="p-4 text-center">
+        <h2 class="font-bold text-lg">Orthopedic Physio</h2>
+        <p class="desc text-sm text-gray-600 mt-2">
+          Treats bone, joint injuries and improves mobility.
+        </p>
+      </div>
+    </div>
+
+    <div class="card bg-white rounded-2xl shadow-lg overflow-hidden h-[320px]">
+      <div class="relative h-2/3 overflow-hidden">
+        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Physical%20Rehabilitation.png?width=900" alt="Sports physiotherapy treatment" class="w-full h-full object-cover" loading="lazy" referrerpolicy="no-referrer">
+      </div>
+      <div class="p-4 text-center">
+        <h2 class="font-bold text-lg">Sports Physio</h2>
+        <p class="desc text-sm text-gray-600 mt-2">
+          Prevents and treats sports injuries and improves performance.
+        </p>
+      </div>
+    </div>
+
+    <div class="card bg-white rounded-2xl shadow-lg overflow-hidden h-[320px]">
+      <div class="relative h-2/3 overflow-hidden">
+        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Home_Rehabilitation.jpg?width=900" alt="Rehabilitation therapy treatment" class="w-full h-full object-cover" loading="lazy" referrerpolicy="no-referrer">
+      </div>
+      <div class="p-4 text-center">
+        <h2 class="font-bold text-lg">Rehabilitation Therapy</h2>
+        <p class="desc text-sm text-gray-600 mt-2">
+          Complete recovery program to regain strength and daily function.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="text-center mt-8">
+    <button
+      id="seeMoreBtn"
+      type="button"
+      class="inline-flex items-center justify-center rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-md transition hover:bg-blue-700"
+    >
+      See More
+    </button>
+  </div>
+
+</div>
+
+<script>
+  const treatmentGrid = document.getElementById("treatmentGrid");
+  const seeMoreBtn = document.getElementById("seeMoreBtn");
+
+  seeMoreBtn.addEventListener("click", () => {
+    const isCollapsed = treatmentGrid.classList.contains("collapsed");
+
+    if (isCollapsed) {
+      treatmentGrid.classList.remove("collapsed");
+      seeMoreBtn.textContent = "See Less";
+      return;
+    }
+
+    treatmentGrid.classList.add("collapsed");
+    seeMoreBtn.textContent = "See More";
+  });
+</script>
+
+</body>
+</html>

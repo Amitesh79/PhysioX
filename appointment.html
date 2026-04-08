@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appointment Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-transparent grid">
+ 
+
+  <!-- Container -->
+  <div class="min-h-screen flex items-center justify-center ">
+    
+    <!-- Card -->
+    <div class="w-full max-w-3xl bg-gray-400 rounded-2xl my-150 shadow-lg p-6 md:p-10">
+      
+      <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-6">
+        Book Appointment
+      </h2>
+
+      <!-- Form -->
+      <form action="https://formspree.io/f/xzdkywwj" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+        <!-- Name -->
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Full Name</label>
+          <input type="text" placeholder="Enter your name"
+            class="mt-1 w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-rose-400 outline-none">
+        </div>
+
+        <!-- Phone -->
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Phone Number</label>
+          <input type="tel" placeholder="Enter your number"
+            class="mt-1 w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-rose-400 outline-none">
+        </div>
+
+        <!-- Email -->
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Email</label>
+          <input type="email" placeholder="Enter your email"
+            class="mt-1 w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-rose-400 outline-none">
+        </div>
+
+        <!-- Date -->
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Appointment Date</label>
+          <input type="date"
+            class="mt-1 w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-rose-400 outline-none">
+        </div>
+
+        <!-- Time -->
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Time</label>
+          <input type="time"
+            class="mt-1 w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-rose-400 outline-none">
+        </div>
+
+        <!-- Treatment -->
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Treatment</label>
+          <select class="mt-1 w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-rose-400 outline-none">
+             <option>General Physiotherapy</option>
+  <option>Back Pain Treatment</option>
+  <option>Neck Pain Treatment</option>
+  <option>Shoulder Pain Treatment</option>
+  <option>Knee Pain Treatment</option>
+  <option>Arthritis Treatment</option>
+  <option>Sports Injury Rehabilitation</option>
+  <option>Post Surgery Rehabilitation</option>
+  <option>Paralysis Treatment</option>
+  <option>Stroke Rehabilitation</option>
+  <option>Neurological Physiotherapy</option>
+  <option>Orthopedic Physiotherapy</option>
+  <option>Cardio-Pulmonary Physiotherapy</option>
+  <option>Pediatric Physiotherapy</option>
+  <option>Geriatric Physiotherapy</option>
+  <option>Postural Correction</option>
+  <option>Gait Training</option>
+  <option>Manual Therapy</option>
+  <option>Electrotherapy</option>
+  <option>Home Visit Physiotherapy</option>
+          </select>
+        </div>
+
+        <!-- Message -->
+        <div class="md:col-span-2">
+          <label class="block text-sm font-medium text-gray-700">Message</label>
+          <textarea rows="4" placeholder="Write your message"
+            class="mt-1 w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-rose-400 outline-none"></textarea>
+        </div>
+
+        <!-- Button -->
+        <div class="md:col-span-2">
+          <button type="submit"
+            class="w-full bg-rose-600 text-white py-3 rounded-lg font-semibold transition duration-300 hover:bg-rose-800">
+            Book Appointment
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  
+
+</body>
+</html>
