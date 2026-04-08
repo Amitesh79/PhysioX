@@ -153,8 +153,10 @@
       transition: transform 0.4s ease;
     }
 
-    .treatment-grid.collapsed .card:nth-child(n+6) {
-      display: none;
+    @media (max-width: 639px) {
+      .treatment-grid.collapsed .card:nth-child(n+5) {
+        display: none;
+      }
     }
   </style>
 
@@ -353,7 +355,7 @@
 
   </div>
 
-  <div class="text-center mt-8">
+  <div class="text-center mt-8 sm:hidden">
     <button
       id="seeMoreBtn"
       type="button"
@@ -415,36 +417,36 @@
 
         <!-- IMAGE CARD -->
         <div class="min-w-[250px] rounded-xl overflow-hidden shadow-md hover:scale-105 transition duration-300">
-          <img src="image/exercise.jpg" class="w-full h-40 object-cover">
+          <img src="image/uu.png" class="w-full h-40 object-cover">
         </div>
 
         <div class="min-w-[250px] rounded-xl overflow-hidden shadow-md hover:scale-105 transition duration-300">
-          <img src="image/manual.jpg" class="w-full h-40 object-cover">
+          <img src="image/one (1).png" class="w-full h-40 object-cover">
         </div>
 
         <div class="min-w-[250px] rounded-xl overflow-hidden shadow-md hover:scale-105 transition duration-300">
-          <img src="image/electro.jpg" class="w-full h-40 object-cover">
+          <img src="image/two.png" class="w-full h-40 object-cover">
+        </div> 
+
+        <div class="min-w-[250px] rounded-xl overflow-hidden shadow-md hover:scale-105 transition duration-300">
+          <img src="image/three.png" class="w-full h-40 object-cover">
         </div>
 
         <div class="min-w-[250px] rounded-xl overflow-hidden shadow-md hover:scale-105 transition duration-300">
-          <img src="image/heat.jpg" class="w-full h-40 object-cover">
-        </div>
-
-        <div class="min-w-[250px] rounded-xl overflow-hidden shadow-md hover:scale-105 transition duration-300">
-          <img src="image/cold.jpg" class="w-full h-40 object-cover">
+          <img src="image/four.png" class="w-full h-40 object-cover">
         </div>
 
         <!-- DUPLICATE FOR SMOOTH LOOP -->
         <div class="min-w-[250px] rounded-xl overflow-hidden shadow-md hover:scale-105 transition duration-300">
-          <img src="image/exercise.jpg" class="w-full h-40 object-cover">
+          <img src="image/one (1).png" class="w-full h-40 object-cover">
         </div>
 
         <div class="min-w-[250px] rounded-xl overflow-hidden shadow-md hover:scale-105 transition duration-300">
-          <img src="image/manual.jpg" class="w-full h-40 object-cover">
+          <img src="image/two1.png" class="w-full h-40 object-cover">
         </div>
 
         <div class="min-w-[250px] rounded-xl overflow-hidden shadow-md hover:scale-105 transition duration-300">
-          <img src="image/electro.jpg" class="w-full h-40 object-cover">
+          <img src="image/three1.png" class="w-full h-40 object-cover">
         </div>
 
       </div>
